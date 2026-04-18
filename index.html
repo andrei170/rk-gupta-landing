@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK Gupta - The Non-Directional Options Income System</title>
+<meta name="description" content="The exact non-directional options selling system RK Gupta uses to pull consistent monthly income in 15 minutes a day. Free 3-hour workshop.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#05090a;--bg-2:#0a1014;--surface:#0f171b;--line:rgba(34,197,94,.12);
+--text:#e9f5ef;--muted:#7b8a85;--accent:#22c55e;--accent-2:#4ade80;--glow:#10b981;
+--danger:#ef4444;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(34,197,94,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(34,197,94,.025) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;left:50%;transform:translateX(-50%);width:90%;height:70%;background:radial-gradient(circle,rgba(34,197,94,.08) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:24px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,9,10,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.03em}
+.logo span{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#041008;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--accent-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(40px,5.8vw,72px);font-weight:800;line-height:1.04;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(30px,3.8vw,46px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:70px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:740px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#041008;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(34,197,94,.25);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(34,197,94,.4)}
+.vsl-box{max-width:900px;margin:56px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(34,197,94,.1) 0%,transparent 60%)}
+.vsl-box::after{content:'VSL PLACEHOLDER';position:absolute;bottom:18px;right:20px;font-size:10px;color:var(--muted);letter-spacing:.2em;font-weight:700}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(34,197,94,.15);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;z-index:1;cursor:pointer;transition:.2s}
+.play-btn:hover{transform:scale(1.08)}
+.play-btn svg{width:32px;height:32px;fill:var(--accent-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(34,197,94,.4);transform:translateY(-4px)}
+.card-num{font-size:14px;color:var(--accent-2);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.pl-panel{background:linear-gradient(135deg,#071512 0%,#0a1f18 100%);border:1px solid rgba(34,197,94,.2);border-radius:20px;padding:48px;margin:40px 0}
+.pl-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:28px}
+.pl-title{font-size:14px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.pl-month{font-size:14px;color:var(--accent-2);font-weight:700}
+.pl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pl-row{display:flex;justify-content:space-between;padding:14px 18px;background:rgba(34,197,94,.04);border-radius:10px;font-size:15px}
+.pl-row-label{color:var(--muted)}
+.pl-row-val{color:var(--text);font-weight:700;font-family:monospace}
+.pl-row.profit .pl-row-val{color:var(--accent-2)}
+.pl-row.loss .pl-row-val{color:var(--danger)}
+.lead-capture{background:linear-gradient(135deg,rgba(34,197,94,.08) 0%,rgba(16,185,129,.04) 100%);border:1px solid rgba(34,197,94,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--accent)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#041008;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#081613 0%,#0f1e1a 100%);border:1px solid rgba(34,197,94,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:44px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{display:block;font-size:15px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);margin-top:10px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'+';color:var(--accent-2);font-weight:700;flex-shrink:0;font-size:18px;line-height:1}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;letter-spacing:.15em}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--accent-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:320px;padding-top:14px}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.testimonial{padding:32px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px}
+.testimonial p{font-size:15px;color:var(--text);margin-bottom:20px}
+.testimonial-by{font-size:13px;color:var(--accent-2);font-weight:600;letter-spacing:.05em}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats,.testimonials{grid-template-columns:1fr}
+.offer-grid,.bio,.pl-grid{grid-template-columns:1fr}
+.lead-capture,.offer-box,.pl-panel{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">RK <span>GUPTA</span></div>
+<a href="#register" class="nav-cta">Register Free</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">FREE 3-HOUR LIVE WORKSHOP</div>
+<h1 class="reveal">Stop Guessing Direction.<br>Get Paid When The <em>Market Does Nothing.</em></h1>
+<p class="reveal">The non-directional options income system I've used for 13 years. 15 minutes a day. 14 of 14 months profitable. Built for Indian retail traders tired of losing on calls and puts.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#register" class="cta-primary reveal">Register For The Free Workshop →</a>
+<div class="stats reveal">
+<div><div class="stat-num">13+</div><div class="stat-label">Years Trading</div></div>
+<div><div class="stat-num">10K+</div><div class="stat-label">Active Students</div></div>
+<div><div class="stat-num">6K+</div><div class="stat-label">Community Members</div></div>
+<div><div class="stat-num">250K+</div><div class="stat-label">Traders Trained</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE PROBLEM</div>
+<h2 class="reveal">93% Of Indian Retail Options Traders<br>Lose Money. Here's Why.</h2>
+<p class="reveal" style="font-size:18px">SEBI's own 2024 study confirmed it. Average loss per trader, roughly Rs 2 lakh. The reason isn't that most traders are stupid. It's that they're on the wrong side of the trade.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">PROBLEM 01</div><h3>Buying Direction</h3><p>Calls go to zero. Puts go to zero. Time decay kills both. Buyers pay premium, sellers collect it. Most retail traders are buyers.</p></div>
+<div class="card reveal"><div class="card-num">PROBLEM 02</div><h3>Screen Addiction</h3><p>Staring at charts 8 hours a day doesn't make you a better trader. It makes you an emotional one. The best trades take 15 minutes to set up and forget.</p></div>
+<div class="card reveal"><div class="card-num">PROBLEM 03</div><h3>Wrong Position Sizing</h3><p>Most accounts don't blow up from bad trades. They blow up from good trades sized wrong. One confident moment ends years of discipline.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">ACTUAL P&L</div>
+<h2 class="reveal">My March 2026 Trading Month</h2>
+<p class="reveal" style="font-size:17px">Not a screenshot. Not a course claim. The actual numbers from my trading log for last month.</p>
+<div class="pl-panel reveal">
+<div class="pl-head">
+<div class="pl-title">Personal Trading Account · Non-Directional System</div>
+<div class="pl-month">MARCH 2026</div>
+</div>
+<div class="pl-grid">
+<div class="pl-row"><span class="pl-row-label">Starting Balance</span><span class="pl-row-val">Rs 10,23,400</span></div>
+<div class="pl-row"><span class="pl-row-label">Ending Balance</span><span class="pl-row-val">Rs 11,07,800</span></div>
+<div class="pl-row profit"><span class="pl-row-label">Net Profit</span><span class="pl-row-val">+ Rs 84,400</span></div>
+<div class="pl-row profit"><span class="pl-row-label">Monthly Return</span><span class="pl-row-val">+ 8.25%</span></div>
+<div class="pl-row"><span class="pl-row-label">Trades Placed</span><span class="pl-row-val">16</span></div>
+<div class="pl-row"><span class="pl-row-label">Win Rate</span><span class="pl-row-val">75%</span></div>
+<div class="pl-row profit"><span class="pl-row-label">Largest Winner</span><span class="pl-row-val">+ Rs 14,200</span></div>
+<div class="pl-row loss"><span class="pl-row-label">Largest Loser</span><span class="pl-row-val">- Rs 8,600</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">The Non-Directional Income System,<br>Built On 3 Pillars</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PILLAR 1</div><h3>Sell, Don't Buy</h3><p>Weekly credit spreads on Nifty and Bank Nifty. Collect premium. Time decay works for you, not against you. 70% of the time you win by doing nothing.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 2</div><h3>Manage The Greeks</h3><p>Delta, theta, vega. Once you understand the three Greeks that actually matter, you stop gambling and start engineering consistent income.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 3</div><h3>Size For Survival</h3><p>Never risk more than 2% of your account on a single trade. Ever. This one rule is worth more than every strategy I teach combined.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE 3-HOUR LIVE WORKSHOP</div>
+<h2>Learn The Complete Non-Directional Setup, Live On Zoom</h2>
+<p style="margin:0 auto">The exact credit spread strategy. Live chart examples on current Nifty and Bank Nifty. Q&A with me at the end. Zero cost, zero upsell inside the workshop itself.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox - workshop details sent.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Register Free →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">STUDENT RESULTS</div>
+<h2 class="reveal">What My Community Is Doing</h2>
+<div class="testimonials">
+<div class="testimonial reveal">
+<p>"Rs 3 lakh to Rs 11.2 lakh in 14 months. Paper-traded for 3 months first. Still working my IT job. The options income is the second salary I always wanted."</p>
+<div class="testimonial-by">RAJESH K · PUNE · SOFTWARE ENGINEER</div>
+</div>
+<div class="testimonial reveal">
+<p>"I'd like to thank Mr. Gupta sir for his excellent options strategy. The way you teach is just amazing and easy to understand. Looking forward to the advanced strategies."</p>
+<div class="testimonial-by">COMMUNITY MEMBER · VERIFIED</div>
+</div>
+<div class="testimonial reveal">
+<p>"Left my IT job at 38 after 2.5 years in the community. Account at Rs 34 lakh now. Trading 15 minutes in the morning, spending the rest of the day with my family."</p>
+<div class="testimonial-by">PRIYA S · BANGALORE · FORMER IT MANAGER</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="register">
+<div class="container">
+<div class="eyebrow reveal">REGISTER NOW</div>
+<h2 class="reveal">The Free 3-Hour Workshop</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Free Entry<small>Limited live seats · Replay available for 48 hours after</small></div>
+<p style="margin-top:16px">Sunday, 3 hours, live on Zoom. I walk you through the entire non-directional setup with current market examples. Serious traders only. If you want to keep guessing direction, this isn't for you.</p>
+<ul class="feature-list">
+<li>The weekly credit spread setup on Nifty and Bank Nifty</li>
+<li>The 2% position sizing rule that saves accounts</li>
+<li>When to adjust a losing trade (and when to cut it)</li>
+<li>My personal P&L review for the last 6 months</li>
+<li>Live Q&A at the end - your questions, real answers</li>
+<li>Private community access details (pricing on call)</li>
+<li>48-hour replay for registered attendees only</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">TAUGHT BY</div>
+<h3 style="margin-bottom:12px">RK Gupta</h3>
+<p style="margin:0 auto 20px;font-size:14px">13+ years trading. 10,000+ students. #1 Amazon bestselling author of "Risk Hai To Ishq Hai." Based in Pune.</p>
+<a href="#register" class="cta-primary" style="width:100%">Register Free →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="bio">
+<div class="bio-img reveal">[RK GUPTA PHOTO]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT RK</div>
+<h2>From 12 Years In IT To Full-Time Trader</h2>
+<p style="font-size:17px;margin-top:20px">I spent 12 years in IT before I opened my first trading account. In 4 months, I lost Rs 2.53 lakh buying calls and puts like every other beginner. I was ashamed to tell my wife.</p>
+<p style="margin-top:16px">A senior trader at a Pune meetup looked at my P&L and said one sentence. "Stop buying. Start selling." I've been selling options ever since. That was 2013. I haven't had a losing year since 2015.</p>
+<p style="margin-top:16px">Today I run Compound The Money with my wife Sakshi. 10,000+ active students. 6,000+ in our private community. Two books on the Indian options market. Two stories that started the same way - an IT salary and a losing trading account.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Is this really free?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Yes. The 3-hour workshop has no cost. I earn from my private community and paid course - the workshop is where you decide if my teaching style fits you. No hidden fees, no surprise upsells inside the session.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>I'm a complete beginner. Will I understand?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Yes. I assume zero prior knowledge. I will explain calls, puts, spreads, and the Greeks from scratch. If you know nothing about options, you will still follow the full workshop.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How much capital do I need to start?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>The strategies I teach work on a Rs 2 lakh account and scale up to Rs 1 crore. You do not need a large account to start. You need discipline and the right system.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What happens after the workshop?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>If you want to go deeper, I'll share details of the RKCS flagship course and the private community at the end of the workshop. Pricing is discussed there or on a follow-up call. No obligation - most attendees just take the free teaching and run with it.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Is this for Indian traders only?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>The strategies are built around Indian options (Nifty, Bank Nifty). NRI traders with NRO/NRE accounts can use the same setup from anywhere in the world. If you only trade US options, this workshop is not for you.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is this NOT for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Day traders looking for quick 10x returns. Options buyers convinced they can predict direction. Anyone hoping to get rich in 30 days. This is a 15-minute-a-day system that compounds slowly. If you want fast, this is the wrong teacher.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">15 Minutes A Day. Consistent Monthly Income.</h2>
+<p class="reveal" style="margin:20px auto 40px">If the math works, the workshop is 3 hours of your Sunday. Nothing to lose.</p>
+<a href="#register" class="cta-primary reveal">Register For The Free Workshop →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 Compound The Money · RK Gupta · Pune, India. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
